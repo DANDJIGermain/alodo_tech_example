@@ -19,43 +19,44 @@ export default async function Home(props) {
         <div className="hero-blob hero-blob-1" />
         <div className="hero-blob hero-blob-2" />
 
-        <div className="container hero-container">
-          {/* Badge */}
-          <div className="hero-badge">
-            <span className="hero-badge-dot" />
-            Fintech &amp; Infrastructure Digitale · Afrique
+        <div className="hero-inner">
+          {/* ── Colonne texte ── */}
+          <div className="hero-text-col">
+            {/* Badge */}
+            <div className="hero-badge">
+              <span className="hero-badge-dot" />
+              Fintech &amp; Infrastructure Digitale · Afrique
+            </div>
+
+            {/* Title */}
+            <h1 className="hero-heading">
+              {dict.home.hero_title}
+            </h1>
+
+            {/* Subtitle */}
+            <p className="hero-desc">
+              {dict.home.hero_subtitle}
+            </p>
+
+            {/* CTAs */}
+            <div className="hero-actions">
+              <a href={`/${lang}/products/alodo`} className="cta-primary">
+                {dict.home.cta_primary}
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href={`/${lang}/contact`} className="cta-secondary">
+                {dict.home.cta_secondary}
+              </a>
+            </div>
+
+            {/* Social proof */}
+            <div className="hero-trust">
+              <p className="trust-text">Rejoignez <strong>500+ entreprises</strong> qui nous font confiance</p>
+            </div>
           </div>
 
-          {/* Title */}
-          <h1 className="hero-heading">
-            {dict.home.hero_title}
-          </h1>
-
-          {/* Subtitle */}
-          <p className="hero-desc">
-            {dict.home.hero_subtitle}
-          </p>
-
-          {/* CTAs */}
-          <div className="hero-actions">
-            <a href={`/${lang}/products/alodo`} className="cta-primary">
-              {dict.home.cta_primary}
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
-            </a>
-            <a href={`/${lang}/contact`} className="cta-secondary">
-              {dict.home.cta_secondary}
-            </a>
-          </div>
-
-          {/* Social proof */}
-          <div className="hero-trust">
-            <p className="trust-text">Rejoignez <strong>500+ entreprises</strong> qui nous font confiance</p>
-          </div>
-        </div>
-
-        {/* Hero visual */}
-        <div className="hero-visual-wrap">
-          <div className="hero-visual-card">
+          {/* ── Colonne image ── */}
+          <div className="hero-visual-col">
             <img
               src="/assets/img/marketing.png"
               alt="ALODO TECH platform"
