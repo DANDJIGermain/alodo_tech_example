@@ -7,8 +7,14 @@ import { usePathname } from "next/navigation";
 const NAV_LINKS = [
   { href: "/", label: { fr: "Accueil", en: "Home" }, key: "home" },
   { href: "/about", label: { fr: "À propos", en: "About" }, key: "about" },
-  { href: "/products/alodo", label: { fr: "ALODO", en: "ALODO" }, key: "products" },
-  { href: "/products/coinai", label: { fr: "COINAI", en: "COINAI" }, key: "products" },
+  {
+    label: { fr: "Nos produits", en: "Our products" },
+    key: "products",
+    subLinks: [
+      { href: "/products/alodo", label: { fr: "ALODO", en: "ALODO" } },
+      { href: "/products/coinai", label: { fr: "COINAI", en: "COINAI" } },
+    ]
+  },
   { href: "/solutions", label: { fr: "Solutions", en: "Solutions" }, key: "solutions" },
   { href: "/technology", label: { fr: "Technologie", en: "Technology" }, key: "technology" },
   { href: "/impact", label: { fr: "Impact", en: "Impact" }, key: "impact" },
@@ -41,15 +47,36 @@ export default function Navbar({ activeKey }: { activeKey: string }) {
           <span>ALODO TECH</span>
         </Link>
         <div className="nav-links">
-          {NAV_LINKS.map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className={l.key === activeKey ? "active" : ""}
-            >
-              {l.label[lang as keyof typeof l.label]}
-            </Link>
-          ))}
+          {NAV_LINKS.map((l) => {
+            if ("subLinks" in l) {
+              return (
+                <div key={l.key} className="nav-item-dropdown">
+                  <span className={`nav-link-dropdown ${l.key === activeKey ? "active" : ""}`}>
+                    {l.label[lang as keyof typeof l.label]}
+                    <svg className="chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+                      <path d="M2 4l3 3 3-3" />
+                    </svg>
+                  </span>
+                  <div className="nav-dropdown">
+                    {l.subLinks.map((sub) => (
+                      <Link key={sub.href} href={sub.href}>
+                        {sub.label[lang as keyof typeof sub.label]}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+            return (
+              <Link
+                key={l.href}
+                href={l.href as string}
+                className={l.key === activeKey ? "active" : ""}
+              >
+                {l.label[lang as keyof typeof l.label]}
+              </Link>
+            );
+          })}
         </div>
         <div className="nav-right">
           <div className="lang" role="group" aria-label="Language">

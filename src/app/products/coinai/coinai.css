@@ -1,25 +1,25 @@
 .coinai-page { background: var(--black); color: var(--white); }
-.coinai-page :global(.nav) { background: rgba(10,10,10,.72); border-color: rgba(255,255,255,.08); }
-.coinai-page :global(.nav-links a) { color: rgba(255,255,255,.7); }
-.coinai-page :global(.nav-links a:hover), .coinai-page :global(.nav-links a.active) { color: var(--white); background: rgba(255,255,255,.06); }
-.coinai-page :global(.nav .brand) { color: white; }
-.coinai-page :global(.nav .lang) { background: rgba(255,255,255,.06); }
-.coinai-page :global(.nav .lang button) { color: rgba(255,255,255,.6); }
-.coinai-page :global(.nav .lang button.on) { background: rgba(255,255,255,.16); color: white; box-shadow: none; }
+.coinai-page .nav { background: rgba(10,10,10,.72); border-color: rgba(255,255,255,.08); }
+.coinai-page .nav-links a { color: rgba(255,255,255,.7); }
+.coinai-page .nav-links a:hover, .coinai-page .nav-links a.active { color: var(--white); background: rgba(255,255,255,.06); }
+.coinai-page .nav .brand { color: white; }
+.coinai-page .nav .lang { background: rgba(255,255,255,.06); }
+.coinai-page .nav .lang button { color: rgba(255,255,255,.6); }
+.coinai-page .nav .lang button.on { background: rgba(255,255,255,.16); color: white; box-shadow: none; }
 
 .coinai-page h1, .coinai-page h2, .coinai-page h3, .coinai-page h4 { color: white; }
 .coinai-page .lead, .coinai-page .muted { color: rgba(255,255,255,.65); }
 .coinai-page .eyebrow { color: rgba(255,255,255,.5); }
 
-.coinai-page :global(.footer) { background: var(--black); border-top-color: rgba(255,255,255,.08); color: rgba(255,255,255,.5); }
-.coinai-page :global(.footer h5) { color: white; }
-.coinai-page :global(.footer-grid a) { color: rgba(255,255,255,.5); }
-.coinai-page :global(.footer-grid a:hover) { color: white; }
-.coinai-page :global(.footer-blurb) { color: rgba(255,255,255,.55); }
-.coinai-page :global(.socials a) { border-color: rgba(255,255,255,.15); color: rgba(255,255,255,.7); }
-.coinai-page :global(.socials a:hover) { border-color: white; color: white; }
-.coinai-page :global(.footer-bottom) { border-top-color: rgba(255,255,255,.08); }
-.coinai-page :global(.footer .brand) { color: white; }
+.coinai-page .footer { background: var(--black); border-top-color: rgba(255,255,255,.08); color: rgba(255,255,255,.5); }
+.coinai-page .footer h5 { color: white; }
+.coinai-page .footer-grid a { color: rgba(255,255,255,.5); }
+.coinai-page .footer-grid a:hover { color: white; }
+.coinai-page .footer-blurb { color: rgba(255,255,255,.55); }
+.coinai-page .socials a { border-color: rgba(255,255,255,.15); color: rgba(255,255,255,.7); }
+.coinai-page .socials a:hover { border-color: white; color: white; }
+.coinai-page .footer-bottom { border-top-color: rgba(255,255,255,.08); }
+.coinai-page .footer .brand { color: white; }
 
 .coinai-hero {
   padding: clamp(80px, 11vw, 130px) 0 clamp(40px, 6vw, 80px);
