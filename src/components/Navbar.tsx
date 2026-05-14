@@ -58,7 +58,7 @@ export default function Navbar({ activeKey }: { activeKey: string }) {
                     </svg>
                   </span>
                   <div className="nav-dropdown">
-                    {l.subLinks.map((sub) => (
+                    {l.subLinks?.map((sub) => (
                       <Link key={sub.href} href={sub.href}>
                         {sub.label[lang as keyof typeof sub.label]}
                       </Link>
