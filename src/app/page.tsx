@@ -138,8 +138,8 @@ export default function Home() {
           <div className="container">
             <div className="reveal">
             </div>
-            <h1 className="display reveal" data-delay="1" style={{ whiteSpace: "nowrap", fontSize: "clamp(28px, 5vw, 64px)" }}>
-              Bâtir le futur de l'Afrique digitale.
+            <h1 className="display reveal" data-delay="1">
+              L'infrastructure <span className="accent">digitale</span> de l'économie réelle.
             </h1>
             <p className="lead reveal" data-delay="2" style={{ maxWidth: "720px", marginTop: "24px" }}>
               ALODO TECH conçoit les socles technologiques qui connectent l'économie informelle
@@ -185,45 +185,72 @@ export default function Home() {
             </div>
 
             <div className="product-cards">
-              {/* ALODO */}
+              {/* ALODO card */}
               <Link href="/products/alodo" className="product-card reveal">
-                <div className="label">Fintech · IoT</div>
-                <h3>ALODO</h3>
-                <p className="muted">
-                  Infrastructure d'inclusion financière connectant les MPME au système financier mondial via l'IoT.
+                <div className="label">Inclusion & Paiements</div>
+                <h3>Digitalisation des flux<br />financiers hybrides</h3>
+                <p className="muted" style={{ margin: 0, maxWidth: "36ch" }}>
+                  Déploiement d'écosystèmes IoT et mobiles pour capter, sécuriser et
+                  fluidifier les échanges économiques en zone émergente.
                 </p>
-                <span className="read">En savoir plus</span>
+                <div className="alodo-visual">
+                  <div className="alodo-box">
+                    <div className="ledge">
+                      <span>ALODO · BOX</span>
+                      <span className="dot blue" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--primary)" }}></span>
+                    </div>
+                    <div className="screen">
+                      <span>+ 12 500 F</span>
+                      <span className="dot"></span>
+                    </div>
+                    <div className="ledge"><span>15:42</span><span>4G</span></div>
+                  </div>
+                  <div className="alodo-flow"></div>
+                  <div className="alodo-chat">
+                    <div className="small">WHATSAPP · ALODO BOT</div>
+                    <div>Vente enregistrée. Score crédit : <b style={{ color: "var(--primary)" }}>+8 pts</b>. Tap pour détails.</div>
+                  </div>
+                </div>
+                <div className="tag-row">
+                  <span className="tag">IoT</span>
+                  <span className="tag">WhatsApp API</span>
+                  <span className="tag blue">Crédit MPME</span>
+                </div>
+                <span className="read">En savoir plus <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 7h8M7 3l4 4-4 4" /></svg></span>
               </Link>
 
-              {/* COINAI */}
-              <Link href="/products/coinai" className="product-card reveal" data-delay="1">
-                <div className="label">AI · Markets</div>
-                <h3>COINAI</h3>
-                <p className="muted">
-                  Intelligence artificielle prédictive pour l'optimisation des investissements sur les bourses africaines.
+              {/* COINAI card */}
+              <Link href="/products/coinai" className="product-card dark reveal" data-delay="1">
+                <div className="label">IA & Analytics</div>
+                <h3>Ingénierie de la donnée<br />& Scoring propriétaire</h3>
+                <p className="muted" style={{ margin: 0, maxWidth: "36ch" }}>
+                  Conception de moteurs d'analyse prédictive pour offrir une visibilité
+                  financière totale aux acteurs non bancarisés du continent.
                 </p>
-                <span className="read">En savoir plus</span>
+                <div className="coinai-visual">
+                  <div className="coinai-row"><span className="ticker">BRVM · SONATEL</span><span><span className="price">17 850</span> <span className="delta">+2.4%</span></span></div>
+                  <div className="coinai-row"><span className="ticker">JSE · NPN</span><span><span className="price">3 421</span> <span className="delta">+0.8%</span></span></div>
+                  <div className="coinai-row"><span className="ticker">NGX · MTN</span><span><span className="price">218.5</span> <span className="delta neg">−1.1%</span></span></div>
+                  <div className="coinai-chart">
+                    <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                      <defs>
+                        <linearGradient id="cg" x1="0" x2="0" y1="0" y2="1">
+                          <stop offset="0%" stopColor="#00C2A8" stopOpacity=".5" />
+                          <stop offset="100%" stopColor="#00C2A8" stopOpacity="0" />
+                        </linearGradient>
+                      </defs>
+                      <path d="M0,55 L20,48 L40,52 L60,38 L80,42 L100,28 L120,32 L140,18 L160,22 L180,12 L200,16 L200,80 L0,80 Z" fill="url(#cg)" />
+                      <path d="M0,55 L20,48 L40,52 L60,38 L80,42 L100,28 L120,32 L140,18 L160,22 L180,12 L200,16" fill="none" stroke="#00C2A8" strokeWidth="1.5" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="tag-row">
+                  <span className="tag dark">LLM</span>
+                  <span className="tag dark">Trading API</span>
+                  <span className="tag dark" style={{ background: "rgba(0,194,168,.18)", color: "var(--teal)" }}>Marchés africains</span>
+                </div>
+                <span className="read">En savoir plus <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 7h8M7 3l4 4-4 4" /></svg></span>
               </Link>
-
-              {/* ALODO PAY */}
-              <div className="product-card reveal" data-delay="2">
-                <div className="label">Payments · API</div>
-                <h3>ALODO PAY</h3>
-                <p className="muted">
-                  Passerelle unifiée connectant mobile money et systèmes bancaires globaux.
-                </p>
-                <span className="read" style={{ opacity: 0.5 }}>Bientôt disponible</span>
-              </div>
-
-              {/* DATA INFRA */}
-              <div className="product-card reveal" data-delay="3">
-                <div className="label">Data Engineering</div>
-                <h3>DATA INFRA</h3>
-                <p className="muted">
-                  Socle technologique de traitement de données pour les institutions financières panafricaines.
-                </p>
-                <span className="read" style={{ opacity: 0.5 }}>Infrastructure interne</span>
-              </div>
             </div>
           </div>
         </section>
