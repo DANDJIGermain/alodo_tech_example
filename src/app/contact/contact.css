@@ -49,7 +49,7 @@
   display: grid; place-items: center;
   color: var(--black);
 }
-.email-item .ic.blue { background: var(--blue-50); color: var(--blue); }
+.email-item .ic.blue { background: var(--primary-50); color: var(--primary); }
 .email-item .ic.teal { background: var(--teal-50); color: var(--teal); }
 .email-item .l { font-size: 13px; color: var(--grey-500); }
 .email-item a { font-weight: 600; font-size: 16px; letter-spacing: -0.01em; }

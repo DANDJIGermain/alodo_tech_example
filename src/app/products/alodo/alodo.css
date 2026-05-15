@@ -79,7 +79,7 @@
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .phone-stack .bubble.me { background: #DCF8C6; border-radius: 8px 8px 0 8px; align-self: flex-end; }
-.phone-stack .bubble b { color: var(--blue); }
+.phone-stack .bubble b { color: var(--primary); }
 
 /* Problem / Solution */
 .ps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -110,7 +110,7 @@
   font-family: var(--font-mono);
 }
 .ps.problem .num { background: var(--grey-700); }
-.ps.solution .num { background: var(--blue); }
+.ps.solution .num { background: var(--primary); }
 
 /* Flow diagram */
 .flow {
@@ -130,7 +130,7 @@
 }
 .flow-step .num {
   font-family: var(--font-mono); font-size: 11px;
-  color: var(--blue); margin-bottom: 12px;
+  color: var(--primary); margin-bottom: 12px;
   letter-spacing: 0.1em;
 }
 .flow-step h4 { font-size: 18px; margin-bottom: 8px; }

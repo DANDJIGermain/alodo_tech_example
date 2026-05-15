@@ -471,3 +471,8 @@ design qui s'en écarte doit être documentée et validée par le lead technique
 
 -- 18 of 18 --
 
+
+
+------------
+je pense qu'il des page qu'on va fermet d'abord example solution et tecnology on va couperles lien on va pas suprimmer les ficher cas apres on n'aura beoit de ça mais actuelement on veut
+pas eux

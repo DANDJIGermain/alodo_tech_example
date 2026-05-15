@@ -47,7 +47,7 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
-.feature .kicker { font-size: 13px; color: var(--blue); font-weight: 500; }
+.feature .kicker { font-size: 13px; color: var(--primary); font-weight: 500; }
 .feature h2 { font-size: clamp(28px, 3.4vw, 44px); font-weight: 700; letter-spacing: -0.025em; margin: 14px 0 16px; color: var(--black); }
 .feature p { color: var(--grey-500); font-size: 17px; line-height: 1.55; }
 .feature .byline {
@@ -146,7 +146,7 @@
 }
 .nl-form input::placeholder { color: rgba(255,255,255,.5); }
 .nl-form button {
-  background: var(--blue); color: white;
+  background: var(--primary); color: white;
   border: 0; padding: 0 22px; height: 44px;
   border-radius: 999px;
   font-size: 14px; font-weight: 500;

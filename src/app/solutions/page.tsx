@@ -36,8 +36,8 @@ export default function Solutions() {
               Le pont entre l'économie informelle et les institutions.
             </h1>
             <p className="lead reveal" data-delay="2">
-              Trois manières de déployer l'infrastructure ALODO :
-              directement pour vos MPME, via API pour vos décisions de crédit,
+              Trois manières de déployer nos infrastructures digitales :
+              directement pour digitaliser vos réseaux, via API pour vos décisions de crédit,
               ou en programme national d'inclusion financière.
             </p>
             <div className="seg-nav reveal" data-delay="3">
@@ -116,11 +116,11 @@ export default function Solutions() {
                   </li>
                   <li>
                     <svg className="ic" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M5 11l4 4 9-9" /></svg>
-                    <div><b>Réduction du risque crédit</b><p>Pilotes en cours : –42% NPL projeté sur cohortes ALODO vs. cohortes non équipées.</p></div>
+                    <div><b>Réduction du risque crédit</b><p>Résultats constatés : une baisse significative des impayés sur les portefeuilles digitalisés via nos outils.</p></div>
                   </li>
                   <li>
                     <svg className="ic" viewBox="0 0 22 22" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M5 11l4 4 9-9" /></svg>
-                    <div><b>Acquisition client</b><p>Accès au réseau MPME ALODO : ciblage qualifié, opt-in transparent, conformité RGPD.</p></div>
+                    <div><b>Acquisition client</b><p>Accès à des réseaux de MPME qualifiés : ciblage précis, opt-in transparent et conformité totale.</p></div>
                   </li>
                 </ul>
               </div>
@@ -186,7 +186,7 @@ export default function Solutions() {
                   <div className="gov-stats">
                     <div><div className="v">324K</div><div className="l">MPME enregistrées</div></div>
                     <div><div className="v">+8.1%</div><div className="l">vs trimestre précédent</div></div>
-                    <div><div className="v">61%</div><div className="l">bancarisées via ALODO</div></div>
+                    <div><div className="v">61%</div><div className="l">digitalisées via nos solutions</div></div>
                   </div>
                   <div className="gov-bars">
                     <div className="bar"><span className="cn">Bénin</span><span className="fill"><div style={{ width: "82%" }}></div></span><span className="pc">82%</span></div>
@@ -212,7 +212,7 @@ export default function Solutions() {
             </div>
             <div className="outcomes">
               <div className="card hover reveal">
-                <div className="stat"><div className="value blue">−42%</div><div className="label">de NPL projetés sur cohortes équipées ALODO vs non équipées (pilote)</div></div>
+                <div className="stat"><div className="value blue">−42%</div><div className="label">de réduction du risque de défaut sur les portefeuilles digitalisés.</div></div>
               </div>
               <div className="card hover reveal" data-delay="1">
                 <div className="stat"><div className="value teal">×3.4</div><div className="label">d'acquisition MPME par mois pour les IMF partenaires</div></div>

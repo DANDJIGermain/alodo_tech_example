@@ -17,7 +17,7 @@
 .layer:hover { transform: translateY(-4px); border-color: var(--grey-300); }
 .layer .ix {
   font-family: var(--font-mono);
-  font-size: 11px; color: var(--blue);
+  font-size: 11px; color: var(--primary);
   letter-spacing: .08em;
 }
 .layer h3 { font-size: 18px; margin: 8px 0 14px; }
@@ -79,7 +79,7 @@
   background: var(--white);
   border-radius: 14px;
   display: grid; place-items: center;
-  color: var(--blue);
+  color: var(--primary);
   border: 1px solid var(--grey-100);
 }
 .pillar h3 { font-size: 20px; margin-bottom: 6px; }

@@ -38,7 +38,7 @@ export default function AlodoProduct() {
                   <span className="muted" style={{ fontSize: "13px" }}>Produit · Inclusion financière</span>
                 </div>
                 <h1 className="display reveal" data-delay="1">
-                  Le boîtier qui rend les MPME <span style={{ color: "var(--blue)" }}>finançables</span>.
+                  Le boîtier qui rend les MPME <span style={{ color: "var(--primary)" }}>finançables</span>.
                 </h1>
                 <p className="lead reveal" data-delay="2" style={{ marginTop: "24px" }}>
                   Un boîtier intelligent au point de vente, un bot WhatsApp accessible

@@ -127,7 +127,7 @@ export default function Careers() {
                 <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>12 postes ouverts.<br />Trouvez le vôtre.</h2>
               </div>
               <div className="reveal" data-delay="2" style={{ color: "var(--grey-500)", fontSize: "14px", maxWidth: "320px" }}>
-                Vous ne voyez pas votre poste idéal ? <a href="#spontaneous" style={{ color: "var(--blue)" }}>Candidature spontanée</a>.
+                Vous ne voyez pas votre poste idéal ? <a href="#spontaneous" style={{ color: "var(--primary)" }}>Candidature spontanée</a>.
               </div>
             </div>
 

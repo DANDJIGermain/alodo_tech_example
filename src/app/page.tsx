@@ -138,26 +138,30 @@ export default function Home() {
           <div className="container">
             <div className="reveal">
             </div>
-            <h1 className="display reveal" data-delay="1">
-              Building <span className="accent">financial</span> & digital infrastructure for emerging markets.
+            <h1 className="display reveal" data-delay="1" style={{ whiteSpace: "nowrap", fontSize: "clamp(28px, 5vw, 64px)" }}>
+              Bâtir le futur de l'Afrique digitale.
             </h1>
-            <p className="lead reveal" data-delay="2" style={{ maxWidth: "640px", marginTop: "28px" }}>
-              Nous connectons les MPME africaines aux outils du 21<sup>e</sup> siècle —
-              boîtier intelligent, scoring IA, paiements mobiles. Une infrastructure, un continent.
+            <p className="lead reveal" data-delay="2" style={{ maxWidth: "720px", marginTop: "24px" }}>
+              ALODO TECH conçoit les socles technologiques qui connectent l'économie informelle
+              au système financier mondial. Nous transformons chaque transaction terrain en donnée
+              de confiance pour une inclusion financière radicale.
             </p>
-            <div className="actions reveal" data-delay="3">
-              <Link href="/products/alodo" className="btn primary">
-                Découvrir ALODO
-                <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M3 7h8M7 3l4 4-4 4" />
-                </svg>
-              </Link>
+            <div className="actions reveal" data-delay="3" style={{ marginTop: "36px" }}>
+              <Link href="/products" className="btn primary">Découvrir Nos produits <span className="arrow">→</span></Link>
               <Link href="/partners" className="btn outline">Devenir partenaire</Link>
             </div>
-            <div className="meta reveal" data-delay="4">
-              <div><b>5</b> pays cibles phase 1</div>
-              <div><b>500K+</b> MPME ciblées</div>
-              <div><b>2 produits</b> · ALODO &amp; COINAI</div>
+
+            {/* Statistiques Dynamiques */}
+            <div className="hero-meta reveal" data-delay="4" style={{ marginTop: "56px", display: "flex", gap: "40px", flexWrap: "wrap", color: "var(--grey-700)", fontSize: "14px", fontWeight: "500" }}>
+              <div className="meta-item">
+                Plus de <span style={{ color: "var(--primary)", fontFamily: "var(--font-tech)", fontWeight: "700", fontSize: "16px" }}>5</span> pays cibles
+              </div>
+              <div className="meta-item">
+                <span style={{ color: "var(--primary)", fontFamily: "var(--font-tech)", fontWeight: "700", fontSize: "16px" }}>500k</span> MPME ciblée
+              </div>
+              <div className="meta-item">
+                <span style={{ color: "var(--primary)", fontFamily: "var(--font-tech)", fontWeight: "700", fontSize: "16px" }}>2</span> produits
+              </div>
             </div>
           </div>
         </section>
@@ -169,10 +173,10 @@ export default function Home() {
           <div className="container">
             <div className="section-head">
               <div>
-                <span className="eyebrow reveal">Nos produits</span>
-                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>Deux infrastructures.<br />Un continent connecté.</h2>
+                <span className="eyebrow reveal">Expertises</span>
+                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>Nos Domaines<br />d'Intervention.</h2>
               </div>
-              <Link href="/products/alodo" className="link-arrow reveal" data-delay="2">
+              <Link href="/products" className="link-arrow reveal" data-delay="2">
                 Voir tous les produits
                 <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
                   <path d="M3 7h8M7 3l4 4-4 4" />
@@ -181,72 +185,45 @@ export default function Home() {
             </div>
 
             <div className="product-cards">
-              {/* ALODO card */}
+              {/* ALODO */}
               <Link href="/products/alodo" className="product-card reveal">
-                <div className="label">ALODO</div>
-                <h3>Inclusion financière<br />pour les MPME</h3>
-                <p className="muted" style={{ margin: 0, maxWidth: "36ch" }}>
-                  Boîtier intelligent, WhatsApp Bot et scoring de crédit
-                  — accessible à toute MPME, même sans smartphone.
+                <div className="label">Fintech · IoT</div>
+                <h3>ALODO</h3>
+                <p className="muted">
+                  Infrastructure d'inclusion financière connectant les MPME au système financier mondial via l'IoT.
                 </p>
-                <div className="alodo-visual">
-                  <div className="alodo-box">
-                    <div className="ledge">
-                      <span>ALODO · BOX</span>
-                      <span className="dot blue" style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--blue)" }}></span>
-                    </div>
-                    <div className="screen">
-                      <span>+ 12 500 F</span>
-                      <span className="dot"></span>
-                    </div>
-                    <div className="ledge"><span>15:42</span><span>4G</span></div>
-                  </div>
-                  <div className="alodo-flow"></div>
-                  <div className="alodo-chat">
-                    <div className="small">WHATSAPP · ALODO BOT</div>
-                    <div>Vente enregistrée. Score crédit : <b style={{ color: "var(--blue)" }}>+8 pts</b>. Tap pour détails.</div>
-                  </div>
-                </div>
-                <div className="tag-row">
-                  <span className="tag">IoT</span>
-                  <span className="tag">WhatsApp API</span>
-                  <span className="tag blue">Crédit MPME</span>
-                </div>
-                <span className="read">En savoir plus <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 7h8M7 3l4 4-4 4" /></svg></span>
+                <span className="read">En savoir plus</span>
               </Link>
 
-              {/* COINAI card */}
-              <Link href="/products/coinai" className="product-card dark reveal" data-delay="1">
-                <div className="label">COINAI</div>
-                <h3>IA pour investir<br />sur les marchés émergents</h3>
-                <p className="muted" style={{ margin: 0, maxWidth: "36ch" }}>
-                  Plateforme de trading automatisé et analytics
-                  propulsée par des modèles ML, en temps réel.
+              {/* COINAI */}
+              <Link href="/products/coinai" className="product-card reveal" data-delay="1">
+                <div className="label">AI · Markets</div>
+                <h3>COINAI</h3>
+                <p className="muted">
+                  Intelligence artificielle prédictive pour l'optimisation des investissements sur les bourses africaines.
                 </p>
-                <div className="coinai-visual">
-                  <div className="coinai-row"><span className="ticker">BRVM · SONATEL</span><span><span className="price">17 850</span> <span className="delta">+2.4%</span></span></div>
-                  <div className="coinai-row"><span className="ticker">JSE · NPN</span><span><span className="price">3 421</span> <span className="delta">+0.8%</span></span></div>
-                  <div className="coinai-row"><span className="ticker">NGX · MTN</span><span><span className="price">218.5</span> <span className="delta neg">−1.1%</span></span></div>
-                  <div className="coinai-chart">
-                    <svg viewBox="0 0 200 80" preserveAspectRatio="none">
-                      <defs>
-                        <linearGradient id="cg" x1="0" x2="0" y1="0" y2="1">
-                          <stop offset="0%" stopColor="#00C2A8" stopOpacity=".5" />
-                          <stop offset="100%" stopColor="#00C2A8" stopOpacity="0" />
-                        </linearGradient>
-                      </defs>
-                      <path d="M0,55 L20,48 L40,52 L60,38 L80,42 L100,28 L120,32 L140,18 L160,22 L180,12 L200,16 L200,80 L0,80 Z" fill="url(#cg)" />
-                      <path d="M0,55 L20,48 L40,52 L60,38 L80,42 L100,28 L120,32 L140,18 L160,22 L180,12 L200,16" fill="none" stroke="#00C2A8" strokeWidth="1.5" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="tag-row">
-                  <span className="tag dark">LLM</span>
-                  <span className="tag dark">Trading API</span>
-                  <span className="tag dark" style={{ background: "rgba(0,194,168,.18)", color: "var(--teal)" }}>Marchés africains</span>
-                </div>
-                <span className="read">En savoir plus <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 7h8M7 3l4 4-4 4" /></svg></span>
+                <span className="read">En savoir plus</span>
               </Link>
+
+              {/* ALODO PAY */}
+              <div className="product-card reveal" data-delay="2">
+                <div className="label">Payments · API</div>
+                <h3>ALODO PAY</h3>
+                <p className="muted">
+                  Passerelle unifiée connectant mobile money et systèmes bancaires globaux.
+                </p>
+                <span className="read" style={{ opacity: 0.5 }}>Bientôt disponible</span>
+              </div>
+
+              {/* DATA INFRA */}
+              <div className="product-card reveal" data-delay="3">
+                <div className="label">Data Engineering</div>
+                <h3>DATA INFRA</h3>
+                <p className="muted">
+                  Socle technologique de traitement de données pour les institutions financières panafricaines.
+                </p>
+                <span className="read" style={{ opacity: 0.5 }}>Infrastructure interne</span>
+              </div>
             </div>
           </div>
         </section>
@@ -257,15 +234,15 @@ export default function Home() {
             <div className="vision-block">
               <div>
                 <span className="eyebrow teal reveal">Notre vision</span>
-                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>Digitaliser<br />l'économie informelle.</h2>
+                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>Donner une identité<br />financière à l'informel.</h2>
                 <p className="lead reveal" data-delay="2" style={{ marginTop: "24px", maxWidth: "480px" }}>
-                  44 millions de MPME en Afrique subsaharienne. La moitié n'a aucun outil
-                  numérique. Nous construisons l'infrastructure qui les rend visibles —
-                  et finançables.
+                  44 millions de MPME en Afrique subsaharienne sont aujourd'hui invisibles.
+                  Nous construisons le pont numérique qui leur permet d'être comprises,
+                  accompagnées et financées par les institutions.
                 </p>
                 <div className="actions reveal" data-delay="3" style={{ marginTop: "32px" }}>
                   <Link href="/about" className="btn dark">Notre mission</Link>
-                  <Link href="/impact" className="btn outline">Voir l'impact</Link>
+                  <Link href="/about" className="btn outline">Notre équipe</Link>
                 </div>
               </div>
               <div className="vision-img reveal" data-delay="2">
@@ -306,49 +283,46 @@ export default function Home() {
                 <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px", maxWidth: "16ch" }}>L'opportunité, en chiffres.</h2>
               </div>
               <p className="muted reveal" data-delay="2" style={{ maxWidth: "320px", margin: 0, fontSize: "13px" }}>
-                Projections phase 1 sur cibles validées. À mettre à jour avec les données terrain.
+                Projections sur cibles validées. À mettre à jour avec les données terrain.
               </p>
             </div>
             <div className="stats-row">
               <div className="stat reveal">
                 <div className="value blue" data-count="500000" data-suffix="+" data-final="500K+">0</div>
-                <div className="label">MPME ciblées<br />en phase 1</div>
+                <div className="label">MPME ciblées</div>
               </div>
               <div className="stat reveal" data-delay="1">
                 <div className="value" data-count="1000000" data-suffix="+" data-final="1M+">0</div>
-                <div className="label">Transactions digitalisées<br />par mois (cible)</div>
+                <div className="label">Transactions / mois</div>
               </div>
               <div className="stat reveal" data-delay="2">
                 <div className="value teal" data-count="5" data-final="5">0</div>
-                <div className="label">Pays cibles<br />phase 1</div>
+                <div className="label">Pays cibles</div>
               </div>
               <div className="stat reveal" data-delay="3">
                 <div className="value" data-count="44" data-suffix="M" data-final="44M">0</div>
-                <div className="label">MPME en Afrique<br />subsaharienne (TAM)</div>
+                <div className="label">MPME en Afrique (TAM)</div>
               </div>
             </div>
           </div>
         </section>
 
         {/* ============ PARTNERS ============ */}
-        <section>
+        <section className="section-partners">
           <div className="container">
-            <div style={{ textAlign: "center", marginBottom: "48px" }}>
-              <p className="partners-text reveal" style={{ margin: 0 }}>Ils nous font confiance</p>
-            </div>
-            <div className="logo-strip reveal" data-delay="1">
-              <div className="logo">UNDP</div>
-              <div className="logo">BOAD</div>
-              <div className="logo">GIZ</div>
-              <div className="logo">Orange MEA</div>
-              <div className="logo">Ecobank</div>
-              <div className="logo">AfDB</div>
-              <div className="logo">Meta</div>
-              <div className="logo">AWS</div>
-              <div className="logo">UEMOA</div>
-              <div className="logo">Mastercard F.</div>
-              <div className="logo">Proparco</div>
-              <div className="logo">MTN Group</div>
+            <div className="partner-showcase">
+              <p className="partners-text reveal" style={{ fontSize: '12px', opacity: 0.6, marginBottom: '8px' }}>Partenaire Stratégique</p>
+              <div className="partner-logo-box reveal" data-delay="1">
+                <img
+                  src="/partenaires/image.png"
+                  alt="TechnoServe"
+                  className="partner-logo-img"
+                />
+                <div className="partner-divider"></div>
+                <div className="partner-tagline">
+                  TechnoServe · L’Entreprise, Solution à la Pauvreté™
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -359,9 +333,10 @@ export default function Home() {
             <div className="cta-banner reveal">
               <div>
                 <span className="eyebrow" style={{ color: "rgba(255,255,255,.6)" }}>Investir · Partenariat</span>
-                <h2 className="h2" style={{ marginTop: "12px", maxWidth: "18ch" }}>Rejoignez la révolution financière africaine.</h2>
+                <h2 className="h2" style={{ marginTop: "12px", maxWidth: "18ch" }}>Bâtissons ensemble les fondations de l'avenir.</h2>
                 <p className="muted" style={{ margin: "16px 0 0", maxWidth: "44ch" }}>
-                  Tour pré-amorçage ouvert. Discutons opportunité de marché, traction et roadmap.
+                  Accélérez la transformation numérique du continent. Discutons opportunité de marché,
+                  traction et déploiement stratégique.
                 </p>
               </div>
               <div className="actions">

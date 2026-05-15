@@ -28,86 +28,23 @@ export default function About() {
       <Navbar activeKey="about" />
 
       <main data-screen-label="02 About">
-        {/* Hero */}
-        <section className="page-hero about-hero">
-          <div className="container">
-            <span className="eyebrow reveal">À propos</span>
-            <h1 className="display reveal" data-delay="1" style={{ marginTop: "18px" }}>
-              Un continent.<br />Une infrastructure digitale.
-            </h1>
-            <p className="lead reveal" data-delay="2">
-              ALODO TECH est une startup tech panafricaine, née d'un hackathon, animée
-              par une obsession : digitaliser l'économie informelle et inclure
-              financièrement les MPME du continent.
-            </p>
-          </div>
-        </section>
-
-        {/* Vision / Mission */}
-        <section className="tight">
-          <div className="container">
-            <div className="mv-grid">
-              <div className="mv-card reveal">
-                <span className="eyebrow">Vision</span>
-                <h3>Un continent, une infrastructure digitale.</h3>
-                <p className="muted" style={{ margin: 0, maxWidth: "44ch" }}>
-                  Faire de l'Afrique le premier marché émergent doté d'une
-                  infrastructure financière native, accessible à toute MPME,
-                  où qu'elle se trouve.
-                </p>
-              </div>
-              <div className="mv-card dark reveal" data-delay="1">
-                <span className="eyebrow" style={{ color: "rgba(255,255,255,.6)" }}>Mission</span>
-                <h3>Connecter l'informel aux outils du 21<sup>e</sup> siècle.</h3>
-                <p className="muted" style={{ margin: 0, maxWidth: "44ch" }}>
-                  Digitaliser et inclure financièrement les MPME d'Afrique
-                  subsaharienne grâce à un boîtier intelligent, un bot WhatsApp
-                  et un scoring de crédit propriétaire.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Timeline */}
-        <section className="bg-grey">
+        <section className="bg-grey" style={{ paddingTop: "120px" }}>
           <div className="container">
             <div className="section-head">
               <div>
                 <span className="eyebrow reveal">Notre histoire</span>
-                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>D'un hackathon à une startup d'infrastructure.</h2>
+                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px", whiteSpace: "nowrap", fontSize: "clamp(24px, 4vw, 44px)" }}>D'un hackathon à une startup d'infrastructure.</h2>
               </div>
-              <p className="muted reveal" data-delay="2" style={{ maxWidth: "340px", margin: 0 }}>
-                Pas de mythologie sur-marketée — juste les étapes qui comptent.
-              </p>
             </div>
 
-            <div className="timeline">
-              <div className="tl-item reveal">
-                <div className="tl-date">MARS 2024</div>
-                <h4>Hackathon Cotonou</h4>
-                <p>Trois co-fondateurs prototypent une caisse intelligente WhatsApp en 48h pour les vendeuses du marché Dantokpa. Le prototype gagne le prix Inclusion Financière.</p>
-              </div>
-              <div className="tl-item reveal" data-delay="1">
-                <div className="tl-date">SEPTEMBRE 2024</div>
-                <h4>Constitution d'ALODO TECH</h4>
-                <p>Création de l'entité juridique au Bénin. Première équipe technique. Premiers retours terrain sur 12 MPME pilotes.</p>
-              </div>
-              <div className="tl-item active reveal" data-delay="2">
-                <div className="tl-date">JANVIER 2025</div>
-                <h4>ALODO V1 — boîtier + bot</h4>
-                <p>Lancement du boîtier IoT et du bot WhatsApp en bêta privée auprès de 80 MPME à Cotonou et Lomé. Premier score de crédit calculé.</p>
-              </div>
-              <div className="tl-item reveal" data-delay="3">
-                <div className="tl-date">JUIN 2025</div>
-                <h4>COINAI — prototype IA</h4>
-                <p>Lancement du prototype COINAI : signaux automatiques sur la BRVM, JSE et NGX. Premiers partenariats brokers.</p>
-              </div>
-              <div className="tl-item reveal" data-delay="4">
-                <div className="tl-date">2026 →</div>
-                <h4>Levée pré-amorçage &amp; scale 5 pays</h4>
-                <p>Ouverture d'un tour de financement pré-amorçage. Cible de déploiement : 5 pays UEMOA en phase 1, 500 000 MPME en horizon 36 mois.</p>
-              </div>
+            <div className="about-content reveal" data-delay="1" style={{ marginTop: "48px" }}>
+              <p className="lead" style={{ maxWidth: "100%" }}>
+                ALODO TECH est un bâtisseur d'infrastructures digitales qui connecte l'économie informelle 
+                africaine au système financier mondial. Nous concevons les outils technologiques 
+                nécessaires pour transformer chaque transaction en donnée exploitable, garantissant 
+                une croissance inclusive et une visibilité financière totale sur tout le continent.
+              </p>
             </div>
           </div>
         </section>
@@ -118,12 +55,8 @@ export default function About() {
             <div className="section-head">
               <div>
                 <span className="eyebrow reveal">Équipe</span>
-                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px" }}>Une core team panafricaine.</h2>
+                <h2 className="h1 reveal" data-delay="1" style={{ marginTop: "16px", whiteSpace: "nowrap" }}>Une équipe pluridisciplinaire.</h2>
               </div>
-              <Link href="/careers" className="link-arrow reveal" data-delay="2">
-                Rejoindre l'équipe
-                <svg className="arrow" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 7h8M7 3l4 4-4 4" /></svg>
-              </Link>
             </div>
 
             <div className="team-grid">
@@ -133,7 +66,7 @@ export default function About() {
                   <div className="name">Alodo Adékunlé</div>
                   <div className="role">Co-fondateur · CEO</div>
                   <div className="bio">Ex-stratégie BOAD. Obsédé par l'inclusion financière depuis ses années d'études à Dakar.</div>
-                  <a href="#" className="li">LinkedIn →</a>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
               <div className="member reveal" data-delay="1">
@@ -142,7 +75,7 @@ export default function About() {
                   <div className="name">Inès Koffi</div>
                   <div className="role">Co-fondatrice · CTO</div>
                   <div className="bio">Ex-Spotify NYC. Architecture cloud, IA appliquée, IoT. Construit ce que d'autres pensent impossible.</div>
-                  <a href="#" className="li">LinkedIn →</a>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
               <div className="member reveal" data-delay="2">
@@ -151,52 +84,34 @@ export default function About() {
                   <div className="name">Moussa Ouédraogo</div>
                   <div className="role">Co-fondateur · COO</div>
                   <div className="bio">Opérations terrain UEMOA. A monté 3 réseaux d'agents bancaires entre Ouaga et Bamako.</div>
-                  <a href="#" className="li">LinkedIn →</a>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
               <div className="member reveal" data-delay="3">
                 <div className="avatar v5">FN</div>
                 <div className="member-info">
                   <div className="name">Fatou N'Diaye</div>
-                  <div className="role">Head of Product</div>
+                  <div className="role">Co-fondatrice · Product</div>
                   <div className="bio">Design produit, recherche utilisateur. Forme l'équipe à parler 'marché', pas 'tech'.</div>
-                  <a href="#" className="li">LinkedIn →</a>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
               <div className="member reveal">
                 <div className="avatar v7">KB</div>
                 <div className="member-info">
                   <div className="name">Kwame Bonsu</div>
-                  <div className="role">Lead AI / COINAI</div>
+                  <div className="role">Co-fondateur · AI</div>
                   <div className="bio">PhD ML, ex-fonds quantitatif. Spécialiste signaux marchés émergents et NLP multilingue.</div>
-                  <a href="#" className="li">LinkedIn →</a>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
               <div className="member reveal" data-delay="1">
                 <div className="avatar v6">SD</div>
                 <div className="member-info">
                   <div className="name">Sira Diallo</div>
-                  <div className="role">Head of Partnerships</div>
+                  <div className="role">Co-fondatrice · Partners</div>
                   <div className="bio">Banques, IMF, régulateurs. Parle leur langue, débloque les portes des décideurs.</div>
-                  <a href="#" className="li">LinkedIn →</a>
-                </div>
-              </div>
-              <div className="member reveal" data-delay="2">
-                <div className="avatar v3">TY</div>
-                <div className="member-info">
-                  <div className="name">Tomi Yusuf</div>
-                  <div className="role">Lead Engineer · IoT</div>
-                  <div className="bio">Edge computing, firmware embarqué. Conçoit un boîtier qui tient 24h sur batterie en zone basse connectivité.</div>
-                  <a href="#" className="li">LinkedIn →</a>
-                </div>
-              </div>
-              <div className="member reveal" data-delay="3">
-                <div className="avatar v8">+</div>
-                <div className="member-info">
-                  <div className="name">Votre nom ici ?</div>
-                  <div className="role">12 postes ouverts</div>
-                  <div className="bio">Nous cherchons des ingénieurs, des designers et des opérations. Si vous lisez ceci, parlons-nous.</div>
-                  <Link href="/careers" className="li">Voir les postes →</Link>
+                  <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" className="li">LinkedIn →</a>
                 </div>
               </div>
             </div>
@@ -244,8 +159,7 @@ export default function About() {
                 </p>
               </div>
               <div className="actions">
-                <Link href="/partners" className="btn primary">Voir le deck</Link>
-                <Link href="/contact" className="btn outline">Demander un appel</Link>
+                <Link href="/partners" className="btn primary" style={{ borderRadius: "50px", padding: "15px 40px", fontSize: "1.2rem" }}>Voir le deck</Link>
               </div>
             </div>
           </div>

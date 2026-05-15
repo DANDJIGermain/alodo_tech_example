@@ -31,7 +31,7 @@
   width: 11px; height: 11px; border-radius: 50%;
   background: var(--white); border: 2px solid var(--black);
 }
-.tl-item.active::before { background: var(--blue); border-color: var(--blue); box-shadow: 0 0 0 6px rgba(0,87,255,.15); }
+.tl-item.active::before { background: var(--primary); border-color: var(--primary); box-shadow: 0 0 0 6px rgba(0,87,255,.15); }
 .tl-date {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -43,7 +43,7 @@
 .tl-item p { margin: 0; color: var(--grey-500); max-width: 60ch; }
 
 /* Team */
-.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 @media (max-width: 900px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 500px) { .team-grid { grid-template-columns: 1fr; } }
 .member {
@@ -79,7 +79,7 @@
 .member-info .bio { font-size: 13px; color: var(--grey-700); margin-top: 10px; line-height: 1.5; }
 .member-info .li {
   display: inline-flex; align-items: center; gap: 6px;
-  margin-top: 14px; color: var(--blue); font-size: 13px; font-weight: 500;
+  margin-top: 14px; color: var(--primary); font-size: 13px; font-weight: 500;
 }
 
 /* Governance */

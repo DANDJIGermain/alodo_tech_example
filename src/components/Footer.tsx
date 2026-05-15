@@ -34,7 +34,7 @@ export default function Footer() {
             </Link>
             <p className="footer-blurb">{T.tag}</p>
             <div className="socials">
-              <a href="#" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/alodo-tech/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M4.98 3.5a2.5 2.5 0 11.02 5 2.5 2.5 0 01-.02-5zM3 9h4v12H3V9zm7 0h3.8v1.7h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21H18.6v-5.6c0-1.34-.02-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97V21H10V9z" />
                 </svg>
@@ -56,15 +56,15 @@ export default function Footer() {
             <ul>
               <li><Link href="/products/alodo">ALODO</Link></li>
               <li><Link href="/products/coinai">COINAI</Link></li>
-              <li><Link href="/solutions">Solutions B2B</Link></li>
-              <li><Link href="/technology">{lang === "fr" ? "Technologie" : "Technology"}</Link></li>
+              {/* <li><Link href="/solutions">Solutions B2B</Link></li>
+              <li><Link href="/technology">{lang === "fr" ? "Technologie" : "Technology"}</Link></li> */}
             </ul>
           </div>
           <div>
             <h5>{T.company}</h5>
             <ul>
               <li><Link href="/about">{lang === "fr" ? "À propos" : "About"}</Link></li>
-              <li><Link href="/impact">Impact</Link></li>
+              {/* <li><Link href="/impact">Impact</Link></li> */}
               <li><Link href="/careers">{lang === "fr" ? "Carrières" : "Careers"}</Link></li>
               <li><Link href="/partners">{lang === "fr" ? "Investir" : "Invest"}</Link></li>
             </ul>
