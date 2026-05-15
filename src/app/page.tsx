@@ -137,10 +137,6 @@ export default function Home() {
           </div>
           <div className="container">
             <div className="reveal">
-              <div className="pill">
-                <span className="badge">v1.0</span>
-                <span>Série pré-amorçage ouverte · 2026</span>
-              </div>
             </div>
             <h1 className="display reveal" data-delay="1">
               Building <span className="accent">financial</span> & digital infrastructure for emerging markets.
